@@ -15,6 +15,12 @@ Slack grubumuzda yaşadığımız öğrenme zorluklarını aşmak ve birlikte ge
 
 ---
 
+src/
+├── contexts/ ← 5 adet context: User, Theme, Language, Form, Notification
+├── components/ ← Navbar, Dashboard, MessageInput, NotificationBox
+├── App.jsx ← Tüm context'ler burada sıralı şekilde sarılır
+├── index.css ← Temel stil ve temalar
+
 ## 🧩 Kullanılan Context'ler
 
 | Context               | Görevi                                  |
@@ -58,6 +64,41 @@ Yani:
   → `useContext` tam olarak bunu yapar! 🔑
 
 ---
+
+Ogrenme Hedefleri
+
+useContext, createContext ve useState yapilarinin sezgisel anlasilmasi Prop drilling karmasasindan kurtulmak
+Cok dilli destek (TR/EN)
+Tema gecisi (Light / Dark)
+Bildirim sistemi ile kullanici etkilesimi
+
+---
+
+🧩 useContext Ağı (Görsel + Açıklama)
+
+İsteğe bağlı basit bir diyagram:
+App.jsx
+├── UserProvider
+├── LanguageProvider
+├── NotificationProvider
+├── FormProvider
+├── Navbar
+├── Dashboard
+├── MessageInput
+└── NotificationBox
+
+                ------
+
+🧪 Uygulama Akışı 1. Kullanıcı Navbar’dan dil veya tema seçebilir 2. Dashboard’da “Merhaba {user}” mesajı gösterilir 3. Mesaj yazılır, gönderilir 4. Bildirim kutusu çıkar → sonra kaybolur 5. Tüm sistem context ile bağlıdır
+
+---
+
+✨ Bonus: Kendin Geliştir
+• Admin görünümü ekle
+• localStorage ile temayı kaydet
+• dark mode için ikonları değiştir
+• Daha fazla dil ekle (fr, de)
+• Mesajları listeleyen yeni bir context kur
 
 ## 🖼️ Uygulama Ekranı
 
