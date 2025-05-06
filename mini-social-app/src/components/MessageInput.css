@@ -1,0 +1,42 @@
+.message-container {
+  background: linear-gradient(to right, #fce3ec, #ffe8d6);
+  padding: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 380px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+.message-box {
+  background: white;
+  border-radius: 12px;
+  padding: 3rem;
+  display: flex;
+  gap: 10px;
+}
+
+.message-box input {
+  flex: 1;
+  padding: 2rem;
+  border-radius: 12px;
+  border: none;
+  font-size: 1rem;
+}
+
+.message-box button {
+  padding: 0.7rem 1rem;
+  background-color: #00b894;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.message-box button:hover {
+  background-color: #019875;
+}

@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #6c5ce7, #fd79a8);
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+select {
+  border-radius: 8px;
+  padding: 4px 8px;
+}

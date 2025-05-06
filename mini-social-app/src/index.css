@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #6c5ce7, #fd79a8);
+  color: #2d3436;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+body.light {
+  background: linear-gradient(135deg, #6c5ce7, #fd79a8);
+  color: #2d3436;
+}
+
+body.dark {
+  background: linear-gradient(135deg, #2d3436, #000000);
+  color: #f1f1f1;
+}
