@@ -1,12 +1,75 @@
-# React + Vite
+# 🌈 Trendy Gradyanlı Mini Sosyal Uygulama
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, `useContext` konusunu sade, görsel ve öğretici bir şekilde anlamak için oluşturulmuştur.  
+Slack grubumuzda yaşadığımız öğrenme zorluklarını aşmak ve birlikte gelişmek adına ortaya çıkmıştır. ✨
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Amaç
 
-## Expanding the ESLint configuration
+- `useContext`, `createContext`, `useState` gibi temel React yapılarıyla sezgisel öğrenim
+- TR/EN dil desteği
+- Tema geçişi (🌞 / 🌙)
+- Mesaj gönderme ve bildirim sistemi
+- Props karmaşasından kurtulma — tek anahtarla tüm evi yönet!
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧩 Kullanılan Context'ler
+
+| Context               | Görevi                                  |
+| --------------------- | --------------------------------------- |
+| `UserContext`         | Kullanıcı bilgisi (isim + rol)          |
+| `ThemeContext`        | Tema yönetimi (light / dark)            |
+| `LanguageContext`     | TR / EN dil seçimi                      |
+| `FormContext`         | Mesaj input ve paylaşım işlemi          |
+| `NotificationContext` | İşlem sonrası bildirim kutusu gösterimi |
+
+---
+
+## 🧠 useContext Anlatımı: "Ev ve Anahtar" Metaforu
+
+🔒 **Problem:**
+
+Diyelim ki büyük bir evin var.  
+Evde onlarca oda var:
+
+- Salon (Navbar)
+- Yatak odası (Dashboard)
+- Ofis (AdminBox)
+- Mutfak (MessageInput)
+
+Her odanın bir kapısı var.  
+Ve her kapıdan geçebilmek için bir anahtara ihtiyacın var.
+
+Her odanın kendi anahtarı olursa…  
+👉 Sürekli anahtar taşırsın.  
+👉 Yanlış anahtarı takarsın.  
+👉 Kapıda kalırsın.  
+😫 Yani props zinciri = karmaşa!
+
+✅ **Çözüm:**  
+“Tüm evi tek anahtarla açabileceğim bir sistem kurmak istiyorum!”
+
+Yani:
+
+- Her odada aynı kilit olsun
+- Tek bir anahtar her kapıyı açsın  
+  → `useContext` tam olarak bunu yapar! 🔑
+
+---
+
+## 🖼️ Uygulama Ekranı
+
+![Ekran görüntüsü](./path-to-screenshot.png)
+
+---
+
+## 🛠️ Kurulum
+
+```bash
+git clone https://github.com/tugbacelik/mini-social-app.git
+cd mini-social-app
+npm install
+npm run dev
+```

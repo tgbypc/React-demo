@@ -9,7 +9,7 @@ const MessageInput = () => {
 
   return (
     <div className="message-container">
-      <div className="message-box">
+      <div className="message-box"> 
         <input
           type="text"
           placeholder={t("placeholder")}
